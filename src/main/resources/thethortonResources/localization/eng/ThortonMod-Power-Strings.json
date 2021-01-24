@@ -1,0 +1,65 @@
+{
+  "thethorton:CowardPower": {
+    "NAME": "Coward Form",
+    "DESCRIPTIONS": [
+      "At the start of your turn, #yRun.",
+      "At the start of your turn, #yRun #b",
+      " times."
+    ]
+  },
+  "thethorton:ReocurringDamagePower": {
+    "NAME": "Investment Beam",
+    "DESCRIPTIONS": [
+      "At the start of your turn, deal #b",
+      " damage to ALL enemies."
+    ]
+  },
+  "thethorton:SilencedBuffsPower": {
+    "NAME": "Demoted - Buffs",
+    "DESCRIPTIONS": [
+      " cannot buff itself."
+    ]
+  },
+  "thethorton:SilencedDebuffsPower": {
+    "NAME": "Demoted - Debuffs",
+    "DESCRIPTIONS": [
+      " cannot debuff you."
+    ]
+  },
+  "thethorton:TemporalPower": {
+    "NAME": "Temporal Abilities",
+    "DESCRIPTIONS": [
+      "The next card you play this turn is played at the start of the next combat.",
+      "The next #b",
+      " cards you play this turn are played at the start of the next combat."
+    ]
+  },
+  "thethorton:ThickSkinPower": {
+    "NAME": "Thick Skin",
+    "DESCRIPTIONS": [
+      "Whenever you lose non-Temporary HP, gain #b",
+      " #yTemporary #yHP."
+    ]
+  },
+  "thethorton:SplitCopy": {
+    "NAME": "Split",
+    "DESCRIPTIONS": [
+      "When its HP is at or below #b50%, will split into #b2 smaller Hexaghosts with ",
+      "'s current HP."
+    ]
+  },
+  "thethorton:DeepFearPower": {
+    "NAME": "Deep Fear",
+    "DESCRIPTIONS": [
+      "Whenever you receive unblocked attack damage, #yRun.",
+      "Whenever you receive unblocked attack damage, #yRun #b",
+      " times."
+    ]
+  },
+  "thethorton:TrueFormPower": {
+    "NAME": "True Form",
+    "DESCRIPTIONS": [
+      "ERROR ERROR ERROR"
+    ]
+  }
+}

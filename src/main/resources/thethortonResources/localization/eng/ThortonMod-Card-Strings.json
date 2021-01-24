@@ -1,0 +1,414 @@
+{
+  "thethorton:AdministrativeActions": {
+    "NAME": "Administrative Actions",
+    "DESCRIPTION": "Choose any Thorton card and put it on top of your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose any card and put it on top of your draw pile. NL Exhaust."
+  },
+  "thethorton:AngerMoment": {
+    "NAME": "Anger Moment",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy doesn't intend to attack, apply !M! Vulnerable."
+  },
+  "thethorton:BattleTrash": {
+    "NAME": "Battle Trash",
+    "DESCRIPTION": "Draw !M! cards. NL You cannot draw additional cards this turn."
+  },
+  "thethorton:BigBreak": {
+    "NAME": "Big Break",
+    "DESCRIPTION": "Gain 3 Strength.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain 3 Strength."
+  },
+  "thethorton:BoardroomBlast": {
+    "NAME": "Boardroom Blast",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies."
+  },
+  "thethorton:BookBash": {
+    "NAME": "Book Bash",
+    "DESCRIPTION": "Deal !D! damage X times."
+  },
+  "thethorton:BusinessBash": {
+    "NAME": "Business Bash",
+    "DESCRIPTION": "Deal !D! damage. NL Add a thethorton:Business_Card into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add a upgraded thethorton:Business_Card into your hand. NL Exhaust."
+  },
+  "thethorton:BusinessBoom": {
+    "NAME": "Business Boom",
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle a thethorton:Business_Card into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Shuffle an upgraded thethorton:Business_Card into your draw pile. NL Exhaust."
+  },
+  "thethorton:BusinessBurst": {
+    "NAME": "Business Burst",
+    "DESCRIPTION": "Gain 5 Gold. NL Shuffle 2 thethorton:Business_Cards into your draw pile. NL Exhaust."
+  },
+  "thethorton:BusinessCard": {
+    "NAME": "Business Card",
+    "DESCRIPTION": "Whenever you play 10 thethorton:Business_Cards, obtain a Relic. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Whenever you play 10 thethorton:Business_Cards, obtain a Relic. NL Draw 1 card. NL Exhaust."
+  },
+  "thethorton:CallIn": {
+    "NAME": "Call In",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Frail."
+  },
+  "thethorton:CallShop": {
+    "NAME": "Call Of Commerce",
+    "DESCRIPTION": "Ethereal. NL Gain 30 Gold. NL The next ? room you enter contains a shop. NL Exhaust."
+  },
+  "thethorton:CardboardBox": {
+    "NAME": "Cardboard Box",
+    "DESCRIPTION": "Gain 1 Intangible."
+  },
+  "thethorton:CashBash": {
+    "NAME": "Cash Bash",
+    "DESCRIPTION": "Gain !M! Gold. NL Deal !D! damage. NL Exhaust."
+  },
+  "thethorton:ChartProject": {
+    "NAME": "Chart Project",
+    "DESCRIPTION": "If the enemy intends to attack, gain !B! Block. NL Otherwise, gain [E] and draw 1 card next turn.",
+    "UPGRADE_DESCRIPTION": "Draw 1 card. NL If the enemy intends to attack, gain !B! Block. NL Otherwise, gain [E] and draw 1 card next turn."
+  },
+  "thethorton:CoinClash": {
+    "NAME": "Coin Clash",
+    "DESCRIPTION": "Gain !M! Gold. NL Deal !D! damage. NL Exhaust."
+  },
+  "thethorton:CoinShield": {
+    "NAME": "Coin Shield",
+    "DESCRIPTION": "Gain !M! Gold. NL Gain !B! Block. NL Exhaust."
+  },
+  "thethorton:GemGun": {
+    "NAME": "Gem Gun",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL If all 3 Gems match, gain 50 Gold. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. NL If at least 3 Gems match, gain 50 Gold. NL Exhaust."
+  },
+  "thethorton:CowardiceForm": {
+    "NAME": "Coward Form",
+    "DESCRIPTION": "thethorton:Run. NL At the start of your turn, thethorton:Run."
+  },
+  "thethorton:Crash": {
+    "NAME": "Crash",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL thethorton:Run."
+  },
+  "thethorton:CrashingStocks": {
+    "NAME": "Crashing Stocks",
+    "DESCRIPTION": "If you have at least 100 Gold, lose 100 Gold and deal !D! damage to ALL enemies."
+  },
+  "thethorton:CreditCard": {
+    "NAME": "Credit Card",
+    "DESCRIPTION": "Gain !M! Gold. NL Can be Upgraded any number of times. NL Exhaust."
+  },
+  "thethorton:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "thethorton:DefendStrong": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "thethorton:Demotion": {
+    "NAME": "Demotion",
+    "DESCRIPTION": "ALL enemies cannot buff themselves or debuff you. NL Exhaust."
+  },
+  "thethorton:DesperateRun": {
+    "NAME": "Desperate Run",
+    "DESCRIPTION": "Draw !M! cards. NL thethorton:Run."
+  },
+  "thethorton:Distance": {
+    "NAME": "Distance",
+    "DESCRIPTION": "Gain !B! Block. NL Apply 1 Weak to ALL enemies."
+  },
+  "thethorton:DockPay": {
+    "NAME": "Dock Pay",
+    "DESCRIPTION": "Deal !D! damage. NL Enemy loses !M! Strength this turn."
+  },
+  "thethorton:DodgeAndRollAndRun": {
+    "NAME": "Dodge & Roll & Run",
+    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain !B! Block. NL thethorton:Run."
+  },
+  "thethorton:DoubleRun": {
+    "NAME": "Run Run",
+    "DESCRIPTION": "thethorton:Run. NL thethorton:Run."
+  },
+  "thethorton:DownPayment": {
+    "NAME": "Down Payment",
+    "DESCRIPTION": "The top card of your draw pile costs 0 until played."
+  },
+  "thethorton:DualBap": {
+    "NAME": "Quintuple Bop",
+    "DESCRIPTION": "Deal !D! damage twice."
+  },
+  "thethorton:ElbowSmash": {
+    "NAME": "Elbow Nudge",
+    "DESCRIPTION": "Deal !D! damage. NL Draw 1 additional card next turn."
+  },
+  "thethorton:EquivalentExchange": {
+    "NAME": "Fair Trade",
+    "DESCRIPTION": "Exhaust 1 card. NL Put a card from your exhaust pile into your hand. NL Exhaust."
+  },
+  "thethorton:SheetShred": {
+    "NAME": "Sheet Shred",
+    "DESCRIPTION": "Gain !B! Block. NL At the start of each of your turns, deal !M! damage to ALL enemies. NL Shuffle this card into your draw pile."
+  },
+  "thethorton:Escape": {
+    "NAME": "Escape!",
+    "DESCRIPTION": "33% chance to escape a non-boss combat. NL Receive no rewards. NL thethorton:Run. NL Exhaustive !stslib:ex!.",
+    "UPGRADE_DESCRIPTION": "33% chance to escape a non-boss combat. NL thethorton:Run. NL Exhaustive !stslib:ex!."
+  },
+  "thethorton:Fatigue": {
+    "NAME": "Fatigue",
+    "DESCRIPTION": "Apply Weak equal to your held Gold. NL Exhaust."
+  },
+  "thethorton:FearfulRun": {
+    "NAME": "Fearful Run",
+    "DESCRIPTION": "Gain !B! Block. NL thethorton:Run."
+  },
+  "thethorton:Fish": {
+    "NAME": "Message From Our Sponsors",
+    "DESCRIPTION": "Unplayable. NL Fun fact: You can commission me to make your custom mod idea! Contact Vex'd#2468 on Discord for more info.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Cost cannot be modified. NL Obtain a Relic. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "I haven't Gathered enough Pyro Buddies!"
+    ]
+  },
+  "thethorton:FocusStrength": {
+    "NAME": "Focus Strength",
+    "DESCRIPTION": "Gain 1 Strength. NL End your turn."
+  },
+  "thethorton:Fortune": {
+    "NAME": "Fortune",
+    "DESCRIPTION": "Gain X0 Gold. NL Refund !stslib:refund!. NL Exhaust."
+  },
+  "thethorton:GoldBuffer": {
+    "NAME": "Cash Buffer",
+    "DESCRIPTION": "Gain !M! Gold. NL Gain !B! Block. NL Exhaust."
+  },
+  "thethorton:Heckle": {
+    "NAME": "Heckle",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Apply !M! Weak."
+  },
+  "thethorton:HedgeFund": {
+    "NAME": "Hedge Fund",
+    "DESCRIPTION": "Deal !D! damage. NL Next turn, draw 1 less card."
+  },
+  "thethorton:Hexaghostify": {
+    "NAME": "Hexaghostify",
+    "DESCRIPTION": "Grave. NL Enemy becomes a Hexaghost. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Grave. NL ALL enemies become Hexaghosts. NL Exhaust."
+  },
+  "thethorton:Hindsight": {
+    "NAME": "Hindsight",
+    "DESCRIPTION": "Next turn, gain !B! Block. NL Put a card from your discard pile into your hand."
+  },
+  "thethorton:HitAhead": {
+    "NAME": "Hit Ahead",
+    "DESCRIPTION": "Deal !D! damage. NL Next turn, gain [E] ."
+  },
+  "thethorton:Investment": {
+    "NAME": "Investment",
+    "DESCRIPTION": "Ethereal. NL Whenever you play 4 thethorton:Investments, obtain a Relic. NL Exhaust."
+  },
+  "thethorton:LastDitchEffort": {
+    "NAME": "Last Ditch Effort",
+    "DESCRIPTION": "Deal !D! damage. NL If your HP is below 50%, deal !D! damage. NL If your HP is below 25%, deal !D! damage."
+  },
+  "thethorton:LongDaysWork": {
+    "NAME": "Long Day's Work",
+    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL Exhaust 1 card at random.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL Exhaust 1 card."
+  },
+  "thethorton:LongTermPayoff": {
+    "NAME": "Long Term Payoff",
+    "DESCRIPTION": "At the start of each of your turns, deal !M! damage to ALL enemies."
+  },
+  "thethorton:MomentaryBreak": {
+    "NAME": "Lunch Break",
+    "DESCRIPTION": "Heal !M! HP. NL Shuffle a thethorton:Business_Card into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Heal !M! HP. NL Add a thethorton:Business_Card into your hand. NL Exhaust."
+  },
+  "thethorton:OddChange": {
+    "NAME": "Perplexing Power",
+    "DESCRIPTION": "Gain 3 of either Malleable, Artifact, Thorns or Plated Armor randomly.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain 3 of either Malleable, Artifact, Thorns or Plated Armor randomly."
+  },
+  "thethorton:PennyToss": {
+    "NAME": "Penny Toss",
+    "DESCRIPTION": "Gain !M! Gold. NL Gain !B! Block. NL Deal !D! damage. NL Exhaust."
+  },
+  "thethorton:PlanAhead": {
+    "NAME": "Plan Ahead",
+    "DESCRIPTION": "Choose a bonus to start the next combat with. NL Exhaust."
+  },
+  "thethorton:PocketChange": {
+    "NAME": "Pocket Change",
+    "DESCRIPTION": "Gain !M! Gold. NL Gain !B! Block. NL Deal !D! damage. NL Draw !M! card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Gold. NL Gain !B! Block. NL Deal !D! damage. NL Draw !M! cards. NL Exhaust."
+  },
+  "thethorton:Portfolio": {
+    "NAME": "Portfolio",
+    "DESCRIPTION": "Gain !M! Gold. NL Shuffle 2 thethorton:Business_Cards and an thethorton:Investment into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Gold. NL Shuffle 2 upgraded thethorton:Business_Cards and an upgraded thethorton:Investment into your draw pile. NL Exhaust."
+  },
+  "thethorton:PowerUp": {
+    "NAME": "Promotion",
+    "DESCRIPTION": "Gain 1 Strength. NL Gain 1 Dexterity."
+  },
+  "thethorton:Rebalance": {
+    "NAME": "Rebalance",
+    "DESCRIPTION": "Gain 1 Strength. NL ALL enemies lose 1 Strength. NL Exhaustive !stslib:ex!."
+  },
+  "thethorton:RichRun": {
+    "NAME": "Running Business",
+    "DESCRIPTION": "Gain !M! Gold. NL thethorton:Run. NL Exhaust."
+  },
+  "thethorton:ROI": {
+    "NAME": "ROI",
+    "DESCRIPTION": "Ethereal. NL Gain !M! Gold. NL Exhaust."
+  },
+  "thethorton:RunningFeint": {
+    "NAME": "Running Feint",
+    "DESCRIPTION": "Apply !M! Vulnerable. NL thethorton:Run."
+  },
+  "thethorton:RunningKick": {
+    "NAME": "Running Kick",
+    "DESCRIPTION": "Deal !D! damage. NL thethorton:Run."
+  },
+  "thethorton:ScalingIsWin": {
+    "NAME": "Scaling Is Win",
+    "DESCRIPTION": "At the start of your turn, gain 1 Strength.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, gain 1 Strength and draw 1 additional card."
+  },
+  "thethorton:SeeingDouble": {
+    "NAME": "Seeing Double",
+    "DESCRIPTION": "Ethereal. NL Choose a card in your hand. NL Put 2 copies of that card on top of your draw pile. NL Exhaust."
+  },
+  "thethorton:ShoutAndRun": {
+    "NAME": "Shout and Run",
+    "DESCRIPTION": "Apply !M! Weak. NL thethorton:Run."
+  },
+  "thethorton:SicklyRun": {
+    "NAME": "Wailing Run",
+    "DESCRIPTION": "ALL enemies lose !M! Strength this turn. NL thethorton:Run."
+  },
+  "thethorton:Siphon": {
+    "NAME": "Blood Debt",
+    "DESCRIPTION": "Deal !D! damage. NL Gain Temporary_HP equal to unblocked damage. NL Exhaust."
+  },
+  "thethorton:SnowDay": {
+    "NAME": "Snow Day",
+    "DESCRIPTION": "Channel 1 Frost. NL thethorton:Run. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Channel 1 Frost. NL thethorton:Run. NL Exhaustive !stslib:ex!."
+  },
+  "thethorton:StampSmack": {
+    "NAME": "Stamp Smack",
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Deal !D! damage to a random enemy at the start of the next combat. NL Exhaust."
+  },
+  "thethorton:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "thethorton:StrikeStrong": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "thethorton:StumblingSlap": {
+    "NAME": "Stumbling Slap",
+    "DESCRIPTION": "Deal !D! damage. If you have Weak, gain !B! Block."
+  },
+  "thethorton:TakeAccounts": {
+    "NAME": "Take Accounts",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards."
+  },
+  "thethorton:TemporalBlast": {
+    "NAME": "Temporal Blast",
+    "DESCRIPTION": "Ethereal. NL Play a copy of the next card you play this turn at the start of the next combat. NL Exhaust."
+  },
+  "thethorton:ThickSkin": {
+    "NAME": "Thick Skin",
+    "DESCRIPTION": "Whenever you lose non-Temporary HP, gain 2 Temporary_HP."
+  },
+  "thethorton:ToxicGreed": {
+    "NAME": "Toxic Greed",
+    "DESCRIPTION": "Apply 3 Poison to a random enemy. Repeat this process up to 5 times for every 100 Gold you have. NL Exhaust."
+  },
+  "thethorton:WhirlingBriefcase": {
+    "NAME": "Whirling Briefcase",
+    "DESCRIPTION": "Gain !M! Gold for each enemy. NL Deal !D! damage to ALL enemies. NL Exhaust."
+  },
+  "thethorton:YoureFired": {
+    "NAME": "You're Fired",
+    "DESCRIPTION": "Deal !D! damage. NL Remove all of your debuffs."
+  },
+  "thethorton:SellShort": {
+    "NAME": "Sell Short",
+    "DESCRIPTION": "Ethereal. NL Add 1 copy of a card in your hand to your deck permanently. NL Exhaust."
+  },
+  "thethorton:SummonProfit": {
+    "NAME": "Summon Profits",
+    "DESCRIPTION": "Add 1 random card from any color into your hand. NL Draw 1 card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add 1 random card from any color into your hand. NL Draw 1 card. NL They cost 0 until played. NL Exhaust."
+  },
+  "thethorton:FeelNoBrain": {
+    "NAME": "Feel No Brain",
+    "DESCRIPTION": "Whenever a card is Exhausted, gain !M! Block.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever a card is Exhausted, gain !M! Block."
+  },
+  "thethorton:Octopus": {
+    "NAME": "Shifting Octopus",
+    "DESCRIPTION": "Do !M! things. NL Exhaust."
+  },
+  "thethorton:CompoundInterest": {
+    "NAME": "Compound Interest",
+    "DESCRIPTION": "Double this card's Gold or gain !M! Gold and remove this card from your deck. NL Exhaust."
+  },
+  "thethorton:CannonShot": {
+    "NAME": "Planned Obsolescence",
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Deal !M! damage to this Act's boss. NL Exhaust."
+  },
+  "thethorton:TrueForm": {
+    "NAME": "Just Business",
+    "DESCRIPTION": "Gain 1 Intangible. NL Exhaust ALL your cards. NL Choose an Intent at the start of your turn."
+  },
+  "thethorton:CoffeeBlast": {
+    "NAME": "Coffee Blast",
+    "DESCRIPTION": "Add 2 random cards from any color into your hand. NL They have Retain. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Add 2 random cards from any color into your hand. NL They have Retain. NL Exhaust."
+  },
+  "thethorton:DeepFear": {
+    "NAME": "Deep Fear",
+    "DESCRIPTION": "Whenever you receive unblocked attack damage, thethorton:Run."
+  },
+  "thethorton:Jackpot": {
+    "NAME": "Loan",
+    "DESCRIPTION": "Upon pickup, gain 300 Gold. NL Exhaust."
+  },
+  "thethorton:GoldenPetal": {
+    "NAME": "Golden Petal",
+    "DESCRIPTION": "Ethereal. NL Card rewards from this combat are Rare cards from any class. NL Fleeting.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Card rewards from this combat are Rare cards from any class. NL Exhaust."
+  },
+  "thethorton:SuperStrike": {
+    "NAME": "Strike?",
+    "DESCRIPTION": "Bash the target enemy with your briefcase, inflicting !D! physical damage. This damage is affected by Strength, Weak, Flying, Vulnerable, and other damage modifiers. This card moves to the discard pile when played."
+  },
+  "thethorton:SuperDefend": {
+    "NAME": "Defend?",
+    "DESCRIPTION": "Shield yourself from enemy attacks with your briefcase, completely preventing the next !B! physical damage taken this turn. The amount of damage prevented is increased by the user's Dexterity. This card moves to the discard pile when played."
+  },
+  "thethorton:MidnightStrike": {
+    "NAME": "Midnight Strike",
+    "DESCRIPTION": "Can only be played if you have played exactly 11 cards this combat. NL Deal !D! damage. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      " NL ( !M! cards left.)",
+      "I need to play ",
+      " more cards!",
+      " NL (TOO LATE!)",
+      " NL (It's time!)"
+    ]
+  },
+  "thethorton:Nibble": {
+    "NAME": "Nibble",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Temporary_HP."
+  },
+  "thethorton:OhNo": {
+    "NAME": "Oh No",
+    "DESCRIPTION": "Ethereal. NL Gain 1 Intangible. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Intangible. NL Exhaust."
+  }
+}
