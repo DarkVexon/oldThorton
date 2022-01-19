@@ -1,12 +1,14 @@
 package theThorton.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.GainGoldAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
+import theThorton.powers.ReocurringDamagePower;
 
 public class FortuneAction extends AbstractGameAction {
     private boolean freeToPlayOnce;
@@ -33,7 +35,7 @@ public class FortuneAction extends AbstractGameAction {
         }
 
         if (effect > 0) {
-            AbstractDungeon.actionManager.addToBottom(new GainGoldAction((effect * 10)));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ReocurringDamagePower(AbstractDungeon.player, effect * 5), effect * 5));
             if (!this.freeToPlayOnce) {
                 this.p.energy.use(EnergyPanel.totalCount);
             }

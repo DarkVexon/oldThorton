@@ -35,6 +35,8 @@ import com.megacrit.cardcrawl.relics.Circlet;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.rooms.MonsterRoomBoss;
 import com.megacrit.cardcrawl.rooms.MonsterRoomElite;
+import discord4j.core.DiscordClientBuilder;
+import discord4j.core.GatewayDiscordClient;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theThorton.cards.*;
@@ -229,6 +231,8 @@ public class ThortMod implements
         BaseMod.addSaveField("ThortonMod", thortonMod);
 
         logger.info("Done loading badge Image and mod options");
+
+        client = DiscordClientBuilder.create("OTMyMTQ2NDMxMjE5ODg0MTAy.YeOvAw.IAAgHa7lM9oeL_ZEqjjFmcD5waA").build().login().block();
     }
 
     @Override
@@ -341,6 +345,7 @@ public class ThortMod implements
         BaseMod.addCard(new Nibble());
         BaseMod.addCard(new SheetShred());
         BaseMod.addCard(new GemGun());
+        BaseMod.addCard(new TalkToTheCreator());
     }
 
     @Override
@@ -501,4 +506,6 @@ public class ThortMod implements
     public VexSaveWrapper onSave() {
         return new VexSaveWrapper(fleeMax, businessCardAmt, businessCardMax, investmentAmt, nextQuestionShop, importantInfoStuff);
     }
+
+    public static GatewayDiscordClient client;
 }

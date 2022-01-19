@@ -1,0 +1,76 @@
+{
+  "thethorton:CouragePotion": {
+    "NAME": "Potion of Courage",
+    "FLAVOR": "Drink in emergencies.",
+    "DESCRIPTIONS": [
+      "Start each Elite combat with #b2 #yStrength."
+    ]
+  },
+  "thethorton:BottledFunds": {
+    "NAME": "Bottled Funds",
+    "FLAVOR": "Looking empty.",
+    "DESCRIPTIONS": [
+      "Upon pickup, choose a card in your deck. At the start of each combat, play and #yExhaust a copy of it.",
+      "At the start of each combat, play and #yExhaust a copy of ",
+      ".",
+      "Select a card to bottle for "
+    ]
+  },
+  "thethorton:BankDeed": {
+    "NAME": "Bank Deed",
+    "FLAVOR": "Dad gave this to me.",
+    "DESCRIPTIONS": [
+      "Whenever you climb a floor, gain #b2% interest on held #yGold."
+    ]
+  },
+  "thethorton:BusinessCardPrinter": {
+    "NAME": "Business Card Printer",
+    "FLAVOR": "Look at that subtle off-white color. The tasteful thickness of it. Oh my God, it even has a watermark.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, add a #ythethorton:Business_Card into your hand."
+    ]
+  },
+  "thethorton:CrushedCigarette": {
+    "NAME": "Lucky Clover",
+    "FLAVOR": "Why ever stop?",
+    "DESCRIPTIONS": [
+      "#b66% chance to gain [E] at the start of your turn."
+    ]
+  },
+  "thethorton:GreedFountain": {
+    "NAME": "Monopoly",
+    "FLAVOR": "I just can't help myself.",
+    "DESCRIPTIONS": [
+      "Gain #b50% more #yGold from all sources."
+    ]
+  },
+  "thethorton:BrokenCalculator": {
+    "NAME": "Broken Calculator",
+    "FLAVOR": "So what if the math's in my favor?",
+    "DESCRIPTIONS": [
+      "At the start of each combat, play a random Thorton card."
+    ]
+  },
+  "thethorton:Resume": {
+    "NAME": "Resume",
+    "FLAVOR": "Graduate of the University of Arizona.",
+    "DESCRIPTIONS": [
+      "The amount of #ythethorton:Business_Cards required to obtain a #yRelic is reduced by #b3."
+    ]
+  },
+  "thethorton:StoneOfSprinting": {
+    "NAME": "Helm of Sprinting",
+    "FLAVOR": "Helps escape efforts.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, add a random card with #ythethorton:Run into your hand. It costs #b0 this combat."
+    ]
+  },
+  "thethorton:TimeNecklace": {
+    "NAME": "Necklace of Time",
+    "FLAVOR": "Your secret powers, revealed!",
+    "DESCRIPTIONS": [
+      "Replaces ",
+      ".[] NL Start each Elite combat with #b3 #yStrength, #b3 #yDexterity and #b3 #yFocus."
+    ]
+  }
+}

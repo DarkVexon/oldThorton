@@ -1,7 +1,7 @@
 {
   "thethorton:AdministrativeActions": {
     "NAME": "Administrative Actions",
-    "DESCRIPTION": "Choose any Thorton card and put it on top of your draw pile. NL Exhaust.",
+    "DESCRIPTION": "Type the name of a card. Put it on top of your draw pile. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Choose any card and put it on top of your draw pile. NL Exhaust."
   },
   "thethorton:AngerMoment": {
@@ -50,7 +50,7 @@
   },
   "thethorton:CallShop": {
     "NAME": "Call Of Commerce",
-    "DESCRIPTION": "Ethereal. NL Gain 30 Gold. NL The next ? room you enter contains a shop. NL Exhaust."
+    "DESCRIPTION": "Ethereal. NL Gain 44 Gold. NL The next ? room you enter contains a shop. NL Exhaust."
   },
   "thethorton:CardboardBox": {
     "NAME": "Cardboard Box",
@@ -128,7 +128,7 @@
   },
   "thethorton:DownPayment": {
     "NAME": "Down Payment",
-    "DESCRIPTION": "The top card of your draw pile costs 0 until played."
+    "DESCRIPTION": "Upgrade the top card of your draw pile. It costs 0 until played and gains Retain."
   },
   "thethorton:DualBap": {
     "NAME": "Quintuple Bop",
@@ -161,7 +161,7 @@
   },
   "thethorton:Fish": {
     "NAME": "Message From Our Sponsors",
-    "DESCRIPTION": "Unplayable. NL Fun fact: You can commission me to make your custom mod idea! Contact Vex'd#2468 on Discord for more info.",
+    "DESCRIPTION": "Unplayable. NL Thanks for playing for so long! No longer offering mod commissions. I'm working on bigger projects now!",
     "UPGRADE_DESCRIPTION": "Ethereal. NL Cost cannot be modified. NL Obtain a Relic. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "I haven't Gathered enough Pyro Buddies!"
@@ -172,8 +172,8 @@
     "DESCRIPTION": "Gain 1 Strength. NL End your turn."
   },
   "thethorton:Fortune": {
-    "NAME": "Fortune",
-    "DESCRIPTION": "Gain X0 Gold. NL Refund !stslib:refund!. NL Exhaust."
+    "NAME": "Good Fortune",
+    "DESCRIPTION": "At the start of your turn, deal X times 5 damage to ALL enemies. NL Refund !stslib:refund!. NL Exhaust."
   },
   "thethorton:GoldBuffer": {
     "NAME": "Cash Buffer",
@@ -410,5 +410,9 @@
     "NAME": "Oh No",
     "DESCRIPTION": "Ethereal. NL Gain 1 Intangible. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain 1 Intangible. NL Exhaust."
+  },
+  "thethorton:TalkToTheCreator": {
+    "NAME": "Commune with Creator",
+    "DESCRIPTION": "Thanks for playing for so long! Type in a message and send it to the me (the mod creator), then remove this from your deck and obtain a random Relic."
   }
 }

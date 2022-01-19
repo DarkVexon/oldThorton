@@ -1,0 +1,86 @@
+[
+  {
+    "PROPER_NAME": "Gather",
+    "NAMES": [
+      "gathered",
+      "gathering",
+      "gather"
+    ],
+    "DESCRIPTION": "#yGathering a #yPyro #yBuddy places it into your centremost #yStorage #yCentre."
+  },
+  {
+    "PROPER_NAME": "Pyro Buddies",
+    "NAMES": [
+      "pyro buddies",
+      "pyro_buddies"
+    ],
+    "DESCRIPTION": "#yPyro #yBuddies can be #yGathered into your #yStorage #yCentres whereupon they will #yGenerate #ySync #yBoons based on their #yType."
+  },
+  {
+    "PROPER_NAME": "Ingest",
+    "NAMES": [
+      "Ingest",
+      "ingest"
+    ],
+    "DESCRIPTION": "#yIngesting #ySync #yBoons activates one of your #yDestiny #yReactors based on the number and type of #yIngested #ySync #yBoons."
+  },
+  {
+    "PROPER_NAME": "Boost Points",
+    "NAMES": [
+      "boost points",
+      "boost_points"
+    ],
+    "DESCRIPTION": "#yBoost #yPoints increment the #yDouble #yTricks of your #yDestiny #yReactors whenever you #yGather a #yPyro #yBuddy."
+  },
+  {
+    "PROPER_NAME": "Sync Boons",
+    "NAMES": [
+      "sync boons",
+      "sync_boons"
+    ],
+    "DESCRIPTION": "#ySync #yBoons activate your #yDestiny #yReactors when #yIngested and supply a passive effect to your #yPyro #yBuddies."
+  },
+  {
+    "PROPER_NAME": "Run",
+    "NAMES": [
+      "run",
+      "running"
+    ],
+    "DESCRIPTION": "After #yRunning a certain amount of times, #pescape #pcombat. If you're fighting a boss, deal damage based on the boss's Max HP to ALL enemies instead. #rEscaping #rgets #rharder #revery #rtime #ryou #rescape."
+  },
+  {
+    "PROPER_NAME": "Business Card",
+    "NAMES": [
+      "business card",
+      "business_card",
+      "business cards",
+      "business_cards"
+    ],
+    "DESCRIPTION": "Whenever you play #b10 #yBusiness #yCards, obtain a #yRelic."
+  },
+  {
+    "PROPER_NAME": "Full Flame",
+    "NAMES": [
+      "full flame",
+      "full_flame",
+      "full flames",
+      "full_flames"
+    ],
+    "DESCRIPTION": "LOL they do something or whatever whooo cares"
+  },
+  {
+    "PROPER_NAME": "Investment",
+    "NAMES": [
+      "investment",
+      "investments"
+    ],
+    "DESCRIPTION": "Whenever you play #b4 #yInvestments, obtain a #yRelic."
+  },
+  {
+    "PROPER_NAME": "Locked",
+    "NAMES": [
+      "locked"
+    ],
+    "DESCRIPTION": "Cannot be played unless unlocked by #yThe #yKey."
+  }
+]

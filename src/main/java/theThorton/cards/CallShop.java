@@ -36,7 +36,7 @@ public class CallShop extends AbstractThortonCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ChangeGoldAction(30));
+        AbstractDungeon.actionManager.addToBottom(new ChangeGoldAction(44));
         ThortMod.nextQuestionShop = true;
     }
 
