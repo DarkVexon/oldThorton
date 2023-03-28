@@ -173,7 +173,7 @@
   },
   "thethorton:Fortune": {
     "NAME": "Good Fortune",
-    "DESCRIPTION": "At the start of your turn, deal X times 5 damage to ALL enemies. NL Refund !stslib:refund!. NL Exhaust."
+    "DESCRIPTION": "At the start of each of your turns, deal 5*X damage to ALL enemies. NL Refund !stslib:refund!. NL Exhaust."
   },
   "thethorton:GoldBuffer": {
     "NAME": "Cash Buffer",
@@ -272,7 +272,7 @@
   "thethorton:ScalingIsWin": {
     "NAME": "Scaling Is Win",
     "DESCRIPTION": "At the start of your turn, gain 1 Strength.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, gain 1 Strength and draw 1 additional card."
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, gain 1 Strength."
   },
   "thethorton:SeeingDouble": {
     "NAME": "Seeing Double",
@@ -414,5 +414,18 @@
   "thethorton:TalkToTheCreator": {
     "NAME": "Commune with Creator",
     "DESCRIPTION": "Thanks for playing for so long! Type in a message and send it to the me (the mod creator), then remove this from your deck and obtain a random Relic."
+  },
+  "thethorton:Cuckoo": {
+    "NAME": "Cuckoo",
+    "DESCRIPTION": "Whenever you draw a Curse card, deal 13 damage to a random enemy.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you draw a Curse card, deal 13 damage to a random enemy."
+  },
+  "thethorton:Ghost": {
+    "NAME": "Ghost",
+    "DESCRIPTION": "At the end of its turns, enemy loses !M! HP. NL Startup: Disguise this as another card."
+  },
+  "thethorton:StruckByATrain": {
+    "NAME": "Struck by a Train",
+    "DESCRIPTION": "Deal !D! damage. NL Increase this card's damage by !M! this combat."
   }
 }

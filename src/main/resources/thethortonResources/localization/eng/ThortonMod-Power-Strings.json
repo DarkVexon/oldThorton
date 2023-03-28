@@ -61,5 +61,19 @@
     "DESCRIPTIONS": [
       "ERROR ERROR ERROR"
     ]
+  },
+  "thethorton:CuckooPower": {
+    "NAME": "Cuckoo",
+    "DESCRIPTIONS": [
+      "Whenever you draw a #rCurse, deal #b",
+      " damage to a random enemy."
+    ]
+  },
+  "thethorton:GhostPower": {
+    "NAME": "Ghost",
+    "DESCRIPTIONS": [
+      "At the end of its turn, loses #b",
+      " HP."
+    ]
   }
 }

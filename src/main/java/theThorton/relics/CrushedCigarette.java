@@ -20,7 +20,7 @@ public class CrushedCigarette extends CustomRelic {
 
     @Override
     public void atTurnStart() {
-        if (AbstractDungeon.cardRandomRng.randomBoolean(0.66F)) {
+        if (AbstractDungeon.cardRandomRng.randomBoolean(0.67F)) {
             this.flash();
             AbstractDungeon.actionManager.addToTop(new GainEnergyAction(1));
         }

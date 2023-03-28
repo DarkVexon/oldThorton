@@ -54,6 +54,11 @@ public class CrashingStocks extends AbstractThortonCard {
     }
 
     @Override
+    public void triggerOnGlowCheck() {
+        glowColor = AbstractDungeon.player.gold >= 100 ? GOLD_BORDER_GLOW_COLOR : BLUE_BORDER_GLOW_COLOR;
+    }
+
+    @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();

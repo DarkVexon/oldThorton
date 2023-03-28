@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
@@ -95,7 +96,7 @@ public class Wiz {
         return returnTrulyRandomPrediCardInCombat(pred, false);
     }
 
-    public static <T> T getRandomItem(ArrayList<T> list, Random rng) {
+    public static <T> T getRandomItem(List<T> list, Random rng) {
         return list.isEmpty() ? null : list.get(rng.random(list.size() - 1));
     }
 

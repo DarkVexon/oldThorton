@@ -30,7 +30,6 @@ public class StoneOfSprinting extends CustomRelic {
         bigCardGroup.add(new DoubleRun());
         bigCardGroup.add(new FearfulRun());
         bigCardGroup.add(new RunningKick());
-        bigCardGroup.add(new RunningFeint());
         bigCardGroup.add(new SicklyRun());
         bigCardGroup.add(new ShoutAndRun());
         AbstractCard card = bigCardGroup.get(AbstractDungeon.cardRandomRng.random(bigCardGroup.size() - 1));

@@ -9,5 +9,8 @@
         <module name="thorton" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="thorton" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

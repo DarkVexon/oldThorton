@@ -4,27 +4,27 @@ import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
+import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import theThorton.NextCombatInfo;
 import theThorton.ThortMod;
+import theThorton.actions.TryToFleeAction;
 import theThorton.utilPatch.TextureLoader;
 
-public class TemporalPower extends AbstractPower implements CloneablePowerInterface {
-    public static final String POWER_ID = ThortMod.makeID("TemporalPower");
+public class CuckooPower extends AbstractPower implements CloneablePowerInterface {
+    public static final String POWER_ID = ThortMod.makeID("CuckooPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private static final Texture tex84 = TextureLoader.getTexture(ThortMod.makePowerPath("EvasiveThoughts_84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(ThortMod.makePowerPath("EvasiveThoughts_32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(ThortMod.makePowerPath("CuckooPower84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(ThortMod.makePowerPath("CuckooPower32.png"));
 
-    public TemporalPower(final AbstractCreature owner, final int amount) {
+    public CuckooPower(final AbstractCreature owner, int amount) {
         name = NAME;
         ID = POWER_ID;
 
@@ -42,31 +42,22 @@ public class TemporalPower extends AbstractPower implements CloneablePowerInterf
     }
 
     @Override
-    public void onUseCard(AbstractCard card, UseCardAction action) {
-        this.flash();
-        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
-    }
-
-    @Override
-    public void atEndOfTurn(boolean isPlayer) {
-        if (isPlayer) {
-            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
+    public void onCardDraw(AbstractCard card) {
+        if (card.type == AbstractCard.CardType.CURSE || card.color == AbstractCard.CardColor.CURSE) {
+            flash();
+            addToBot(new DamageRandomEnemyAction(new DamageInfo(owner, amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         }
     }
+
 
     @Override
     public AbstractPower makeCopy() {
-        return new TemporalPower(owner, amount);
+        return new CuckooPower(owner, amount);
     }
+
 
     @Override
     public void updateDescription() {
-        {
-            if (this.amount == 0) {
-                description = DESCRIPTIONS[0];
-            } else {
-                description = DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2];
-            }
-        }
+        description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
 }

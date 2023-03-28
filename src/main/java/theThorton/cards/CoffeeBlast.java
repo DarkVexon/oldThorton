@@ -1,18 +1,14 @@
 package theThorton.cards;
 
-import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
+import basemod.cardmods.RetainMod;
+import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDiscardEffect;
-import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
 import theThorton.ThortMod;
 import theThorton.characters.TheThorton;
 
@@ -46,27 +42,8 @@ public class CoffeeBlast extends AbstractThortonCard {
             public void update() {
                 for (int i = 0; i < 2; i++) {
                     AbstractCard q = SummonProfit.getAnyCardRandomly();
-                    AbstractDungeon.actionManager.addToBottom(new AbstractGameAction() {
-                        @Override
-                        public void update() {
-                            if (this.amount + AbstractDungeon.player.hand.size() > 10) {// 63
-                                AbstractDungeon.player.createHandIsFullDialog();// 64
-                                AbstractDungeon.effectList.add(new ShowCardAndAddToDiscardEffect(q, (float) Settings.WIDTH / 2.0F + (25.0F * Settings.scale) + AbstractCard.IMG_WIDTH, (float) Settings.HEIGHT / 2.0F));// 160 162
-                            } else {
-                                AbstractDungeon.effectList.add(new ShowCardAndAddToHandEffect(q));// 92
-                            }
-
-
-                            if (this.amount > 0) {// 72
-                                AbstractDungeon.actionManager.addToTop(new WaitAction(0.8F));// 73
-                            }
-
-                            this.isDone = true;// 76
-                        }
-                    });
-                    AlwaysRetainField.alwaysRetain.set(q, true);
-                    q.rawDescription = "Retain. NL " + q.rawDescription;
-                    q.initializeDescription();
+                    CardModifierManager.addModifier(q, new RetainMod());
+                    addToTop(new MakeTempCardInHandAction(q));
                 }
                 isDone = true;
             }

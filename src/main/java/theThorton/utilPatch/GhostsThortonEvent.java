@@ -23,7 +23,6 @@ public class GhostsThortonEvent extends AbstractImageEvent {
     public static final String ID = "thorton:Ghosts";
     private static final EventStrings eventStrings;
     public static final String NAME;
-    public static final String[] DESCRIPTIONS;
     public static final String[] OPTIONS;
     private static final String INTRO_BODY_M;
     private static final String ACCEPT_BODY;
@@ -41,12 +40,12 @@ public class GhostsThortonEvent extends AbstractImageEvent {
         }
 
         if (AbstractDungeon.ascensionLevel >= 15) {// 38
-            this.imageEventText.setDialogOption("[Accept] #gReceive #g3 Oh No. #rLose #r" + this.hpLoss + OPTIONS[1], new OhNo());// 39
+            this.imageEventText.setDialogOption("[Nod] #gReceive #g2 Oh No. #rLose #r" + this.hpLoss + OPTIONS[1], new OhNo());// 39
         } else {
-            this.imageEventText.setDialogOption( "[Accept] #gReceive #g5 Oh No. #rLose #r" + this.hpLoss + OPTIONS[1], new OhNo());// 41
+            this.imageEventText.setDialogOption( "[Nod] #gReceive #g4 Oh No. #rLose #r" + this.hpLoss + OPTIONS[1], new OhNo());// 41
         }
 
-        this.imageEventText.setDialogOption(OPTIONS[2]);// 44
+        this.imageEventText.setDialogOption("[RUN AAAAAHH GOSTTT]");// 44
     }// 45
 
     public void onEnterRoom() {
@@ -87,7 +86,7 @@ public class GhostsThortonEvent extends AbstractImageEvent {
 
     private void becomeGhost() {
         List<String> cards = new ArrayList();// 97
-        int amount = 5;// 98
+        int amount = 4;// 98
         if (AbstractDungeon.ascensionLevel >= 15) {// 99
             amount -= 2;// 100
         }
@@ -104,10 +103,10 @@ public class GhostsThortonEvent extends AbstractImageEvent {
     static {
         eventStrings = CardCrawlGame.languagePack.getEventString("Ghosts");// 19
         NAME = eventStrings.NAME;// 20
-        DESCRIPTIONS = eventStrings.DESCRIPTIONS;// 21
         OPTIONS = eventStrings.OPTIONS;// 22
-        INTRO_BODY_M = DESCRIPTIONS[0];// 23
-        ACCEPT_BODY = DESCRIPTIONS[2];// 24
-        EXIT_BODY = DESCRIPTIONS[3];// 25
+        INTRO_BODY_M = "As you continue your ascent, #p~thick~ #p~black~ #p~smoke~ begins to billow out of the ground and walls around you, coalescing into three masked forms that start to speak... NL NL OH MY GOD, THEY'RE GHOSTS!!! NL Ever since he was a child, Thorton has had a ~terrible~ ~fear~ ~of~ #p~ghosts!~ NL NL The #p~specters~ are saying something, but you can't feel your legs... ";
+        ACCEPT_BODY = "You nod - anything to get away from the ~super~ ~scary~ ~spooky~ ~ghosts!~ NL NL Darkness envelops you, billowing from the largest's mouth. NL NL You wake up hours later... oh no.. YOU ARE @GHOST@ AS WELL!?";
+        EXIT_BODY = "You book it out of there faster than a baseball player who accidentally went to the football field with a golf ball instead of the game he was supposed to be at, and now the whole team is going to lose because of him. NL NL GHOSTS ARE SCARY!";
+
     }
 }

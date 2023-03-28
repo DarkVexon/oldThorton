@@ -12,7 +12,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
-import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -35,8 +34,6 @@ import com.megacrit.cardcrawl.relics.Circlet;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.rooms.MonsterRoomBoss;
 import com.megacrit.cardcrawl.rooms.MonsterRoomElite;
-import discord4j.core.DiscordClientBuilder;
-import discord4j.core.GatewayDiscordClient;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theThorton.cards.*;
@@ -231,8 +228,6 @@ public class ThortMod implements
         BaseMod.addSaveField("ThortonMod", thortonMod);
 
         logger.info("Done loading badge Image and mod options");
-
-        client = DiscordClientBuilder.create("OTMyMTQ2NDMxMjE5ODg0MTAy.YeOvAw.IAAgHa7lM9oeL_ZEqjjFmcD5waA").build().login().block();
     }
 
     @Override
@@ -260,7 +255,6 @@ public class ThortMod implements
         BaseMod.addCard(new AdministrativeActions());
         BaseMod.addCard(new AngerMoment());
         BaseMod.addCard(new BattleTrash());
-        BaseMod.addCard(new BigBreak());
         BaseMod.addCard(new BoardroomBlast());
         BaseMod.addCard(new BookBash());
         BaseMod.addCard(new BusinessBash());
@@ -268,7 +262,6 @@ public class ThortMod implements
         BaseMod.addCard(new BusinessBurst());
         BaseMod.addCard(new BusinessCard());
         BaseMod.addCard(new CallIn());
-        BaseMod.addCard(new CallShop());
         BaseMod.addCard(new CardboardBox());
         BaseMod.addCard(new CashBash());
         BaseMod.addCard(new ChartProject());
@@ -292,7 +285,6 @@ public class ThortMod implements
         BaseMod.addCard(new Escape());
         BaseMod.addCard(new Fatigue());
         BaseMod.addCard(new FearfulRun());
-        BaseMod.addCard(new Fish());
         BaseMod.addCard(new FocusStrength());
         BaseMod.addCard(new Fortune());
         BaseMod.addCard(new GoldBuffer());
@@ -314,7 +306,6 @@ public class ThortMod implements
         BaseMod.addCard(new Rebalance());
         BaseMod.addCard(new RichRun());
         BaseMod.addCard(new ROI());
-        BaseMod.addCard(new RunningFeint());
         BaseMod.addCard(new RunningKick());
         BaseMod.addCard(new ScalingIsWin());
         BaseMod.addCard(new SeeingDouble());
@@ -322,12 +313,10 @@ public class ThortMod implements
         BaseMod.addCard(new SicklyRun());
         BaseMod.addCard(new Siphon());
         BaseMod.addCard(new SnowDay());
-        BaseMod.addCard(new StampSmack());
         BaseMod.addCard(new Strike());
         BaseMod.addCard(new StumblingSlap());
         BaseMod.addCard(new TakeAccounts());
         BaseMod.addCard(new ThickSkin());
-        BaseMod.addCard(new TemporalBlast());
         BaseMod.addCard(new ToxicGreed());
         BaseMod.addCard(new WhirlingBriefcase());
         BaseMod.addCard(new YoureFired());
@@ -335,17 +324,17 @@ public class ThortMod implements
         BaseMod.addCard(new SummonProfit());
         BaseMod.addCard(new FeelNoBrain());
         BaseMod.addCard(new Octopus());
-        BaseMod.addCard(new CompoundInterest());
         BaseMod.addCard(new CannonShot());
         BaseMod.addCard(new CoffeeBlast());
-        BaseMod.addCard(new TrueForm());
         BaseMod.addCard(new Jackpot());
         BaseMod.addCard(new GoldenPetal());
-        BaseMod.addCard(new MidnightStrike());
         BaseMod.addCard(new Nibble());
         BaseMod.addCard(new SheetShred());
         BaseMod.addCard(new GemGun());
-        BaseMod.addCard(new TalkToTheCreator());
+        BaseMod.addCard(new Cuckoo());
+        BaseMod.addCard(new Ghost());
+        BaseMod.addCard(new StruckByATrain());
+        BaseMod.addCard(new OhNo());
     }
 
     @Override
@@ -506,6 +495,4 @@ public class ThortMod implements
     public VexSaveWrapper onSave() {
         return new VexSaveWrapper(fleeMax, businessCardAmt, businessCardMax, investmentAmt, nextQuestionShop, importantInfoStuff);
     }
-
-    public static GatewayDiscordClient client;
 }
