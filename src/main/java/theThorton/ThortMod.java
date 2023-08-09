@@ -488,11 +488,12 @@ public class ThortMod implements
             ThortMod.investmentAmt = s.investmentAmt;
             ThortMod.nextQuestionShop = s.nextQuestionShop;
             ThortMod.importantInfoStuff = s.nextCombatActionsList;
+            AdministrativeActions.used = s.usedAdmins;
         }
     }
 
     @Override
     public VexSaveWrapper onSave() {
-        return new VexSaveWrapper(fleeMax, businessCardAmt, businessCardMax, investmentAmt, nextQuestionShop, importantInfoStuff);
+        return new VexSaveWrapper(fleeMax, businessCardAmt, businessCardMax, investmentAmt, nextQuestionShop, importantInfoStuff, AdministrativeActions.used);
     }
 }

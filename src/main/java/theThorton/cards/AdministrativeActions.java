@@ -32,22 +32,22 @@ public class AdministrativeActions extends AbstractThortonCard {
     private static final AbstractCard.CardRarity RARITY = AbstractCard.CardRarity.RARE;
     private static final AbstractCard.CardTarget TARGET = AbstractCard.CardTarget.SELF;
     private static final AbstractCard.CardType TYPE = AbstractCard.CardType.SKILL;
-    private static final int COST = 3;
-    private static final int UPGRADE_COST = 2;
+    private static final int COST = 2;
+
+    public static ArrayList<String> used = new ArrayList<>();
 
     public AdministrativeActions() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         ThortMod.loadJokeCardImage(this, makeBetaCardPath("AdministrativeActions.png"));
         exhaust = true;
-        isEthereal = true;
         this.tags.add(CardTags.HEALING);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new TypingAction((string) -> {
+            used.add(string);
             ArrayList<AbstractCard> cards = Wiz.getCardsMatchingPredicate((card) -> card.originalName.equalsIgnoreCase(string), true);
-            System.out.println(cards);
             AbstractCard c = Wiz.getRandomItem(cards);
             if (c == null) {
                 c = new Madness();
@@ -62,7 +62,7 @@ public class AdministrativeActions extends AbstractThortonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(2);
+            upgradeBaseCost(1);
         }
     }
 }

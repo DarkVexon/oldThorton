@@ -1,8 +1,7 @@
 {
   "thethorton:AdministrativeActions": {
     "NAME": "Administrative Actions",
-    "DESCRIPTION": "Type the name of a card. Put it on top of your draw pile. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Choose any card and put it on top of your draw pile. NL Exhaust."
+    "DESCRIPTION": "Type the name of a card and put it on top of your draw pile. NL You can't type the same name twice. Exhaust."
   },
   "thethorton:AngerMoment": {
     "NAME": "Anger Moment",
@@ -61,9 +60,8 @@
     "DESCRIPTION": "Gain !M! Gold. NL Deal !D! damage. NL Exhaust."
   },
   "thethorton:ChartProject": {
-    "NAME": "Chart Project",
-    "DESCRIPTION": "If the enemy intends to attack, gain !B! Block. NL Otherwise, gain [E] and draw 1 card next turn.",
-    "UPGRADE_DESCRIPTION": "Draw 1 card. NL If the enemy intends to attack, gain !B! Block. NL Otherwise, gain [E] and draw 1 card next turn."
+    "NAME": "Buzzwords",
+    "DESCRIPTION": "Deal !D! damage. NL If you hold no Attacks, apply !M! Vulnerable. NL If the enemy doesn't intend to attack, apply !M! Weak."
   },
   "thethorton:CoinClash": {
     "NAME": "Coin Clash",

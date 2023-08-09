@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.FontHelper;
+import theThorton.cards.AdministrativeActions;
 
 import java.util.function.Consumer;
 import java.util.function.Predicate;
@@ -27,7 +28,7 @@ public class TypingAction extends AbstractGameAction implements TextReceiver, Re
     }
 
     public TypingAction(Consumer<String> callback) {
-        this(callback, c->true);
+        this(callback, c -> true);
     }
 
     @Override
@@ -41,7 +42,20 @@ public class TypingAction extends AbstractGameAction implements TextReceiver, Re
 
     @Override
     public void receiveRender(SpriteBatch spriteBatch) {
-        FontHelper.renderDeckViewTip(spriteBatch, this.getCurrentText(), 300 * Settings.scale, Settings.CREAM_COLOR);
+        float curY = 350 * Settings.scale + (AdministrativeActions.used.size() * (50 * Settings.scale));
+        if (AdministrativeActions.used.isEmpty()) {
+            FontHelper.renderDeckViewTip(spriteBatch, "Typing Card. Used: None!", curY, Settings.CREAM_COLOR);
+            curY -= 50 * Settings.scale;
+        } else {
+            FontHelper.renderDeckViewTip(spriteBatch, "Typing Card. Used:", curY, Settings.CREAM_COLOR);
+            curY -= 50 * Settings.scale;
+            for (String s : AdministrativeActions.used) {
+                FontHelper.renderDeckViewTip(spriteBatch, s, curY, Settings.CREAM_COLOR);
+                curY -= (50 * Settings.scale);
+            }
+        }
+
+        FontHelper.renderDeckViewTip(spriteBatch, this.getCurrentText(), curY, Settings.CREAM_COLOR);
     }
 
     @Override
@@ -56,7 +70,7 @@ public class TypingAction extends AbstractGameAction implements TextReceiver, Re
 
     @Override
     public boolean acceptCharacter(char c) {
-        return consoleFont.getData().hasGlyph(c) && myFunc.test(c);
+        return consoleFont.getData().hasGlyph(c) && myFunc.test(c) && c != '+' && !AdministrativeActions.used.stream().anyMatch(q -> q.equalsIgnoreCase(getCurrentText() + c));
     }
 
     @Override

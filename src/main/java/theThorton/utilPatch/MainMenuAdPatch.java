@@ -56,21 +56,21 @@ public class MainMenuAdPatch {
         advert.current = ads.get(0);
     }
 
-    @SpirePatch(clz = TitleBackground.class, method = "render")
-    public static class RenderPatch {
-        @SpirePostfixPatch
-        public static void renderAd(TitleBackground instance, SpriteBatch sb) {
-            advert.render(sb);
-        }
-    }
-
-    @SpirePatch(clz = TitleBackground.class, method = "update")
-    public static class UpdatePatch {
-        @SpirePostfixPatch
-        public static void updateAd(TitleBackground instance) {
-            advert.update();
-        }
-    }
+//    @SpirePatch(clz = TitleBackground.class, method = "render")
+//    public static class RenderPatch {
+//        @SpirePostfixPatch
+//        public static void renderAd(TitleBackground instance, SpriteBatch sb) {
+//            advert.render(sb);
+//        }
+//    }
+//
+//    @SpirePatch(clz = TitleBackground.class, method = "update")
+//    public static class UpdatePatch {
+//        @SpirePostfixPatch
+//        public static void updateAd(TitleBackground instance) {
+//            advert.update();
+//        }
+//    }
 
     private static class MainMenuAd {
         private static final Texture tex = TextureLoader.getTexture("thethortonResources/images/menuPanelHalfBlue.png");

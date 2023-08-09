@@ -10,9 +10,11 @@ import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import theThorton.ThortMod;
 import theThorton.characters.TheThorton;
+import theThorton.powers.CuckooPower;
 
 import static theThorton.ThortMod.makeBetaCardPath;
 import static theThorton.ThortMod.makeCardPath;
+import static theThorton.utilPatch.Wiz.applyToSelf;
 
 
 public class Cuckoo extends AbstractThortonCard {
@@ -34,8 +36,7 @@ public class Cuckoo extends AbstractThortonCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, 1), 1));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, 1), 1));
+        applyToSelf(new CuckooPower(p, 13));
     }
 
     @Override

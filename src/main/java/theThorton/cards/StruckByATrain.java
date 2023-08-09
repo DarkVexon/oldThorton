@@ -34,7 +34,7 @@ public class StruckByATrain extends AbstractThortonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         ThortMod.loadJokeCardImage(this, makeBetaCardPath("StruckByATrain.png"));
         baseDamage = DAMAGE;
-        baseMagicNumber = DAMAGE_UP;
+        baseMagicNumber = magicNumber = DAMAGE_UP;
     }
 
     @Override
