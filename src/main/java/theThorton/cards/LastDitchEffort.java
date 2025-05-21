@@ -53,42 +53,6 @@ public class LastDitchEffort extends AbstractThortonCard {
         }
     }
 
-    public void applyPowers() {
-        super.applyPowers();
-        this.rawDescription = colorMe(this.rawDescription);
-        initializeDescription();
-    }
-
-    private static String colorMe(String description) {
-        ArrayList<String> parsedDescription = new ArrayList<>(Arrays.asList(description.split(" NL ")));
-        ListIterator<String> it = parsedDescription.listIterator();
-        while (it.hasNext()) {
-            String s = it.next();
-            if ((s.contains("50%") && AbstractDungeon.player.currentHealth >= AbstractDungeon.player.maxHealth / 2F) || (s.contains("25%") && AbstractDungeon.player.currentHealth >= AbstractDungeon.player.maxHealth / 4F)) {
-                ArrayList<String> blahblah = new ArrayList<>(Arrays.asList(s.split(" ")));
-                ListIterator<String> wah = blahblah.listIterator();
-                while (wah.hasNext()) {
-                    String r = wah.next();
-                    if (!r.startsWith("!")) {
-                        wah.set("[#9a9b9c]" + r + "[]");
-                    }
-                }
-                it.set(StringUtils.join(blahblah, " "));
-            } else {
-                ArrayList<String> blahblah = new ArrayList<>(Arrays.asList(s.split(" ")));
-                ListIterator<String> wah = blahblah.listIterator();
-                while (wah.hasNext()) {
-                    String r = wah.next();
-                    if (!r.startsWith("!")) {
-                        wah.set(r.replaceAll("#9a9b9c", ""));
-                    }
-                }
-                it.set(StringUtils.join(blahblah, " "));
-            }
-        }
-        return StringUtils.join(parsedDescription, " NL ");
-    }
-
     @Override
     public void upgrade() {
         if (!upgraded) {

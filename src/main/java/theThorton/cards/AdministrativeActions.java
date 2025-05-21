@@ -24,15 +24,15 @@ public class AdministrativeActions extends AbstractThortonCard {
 
     public static final String ID = ThortMod.makeID("AdministrativeActions");
     public static final String IMG = makeCardPath("AdministrativeActions.png");
-    public static final AbstractCard.CardColor COLOR = TheThorton.Enums.COLOR_GRAY;
+    public static final AbstractCard.CardColor COLOR = CardColor.COLORLESS;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-    private static final AbstractCard.CardRarity RARITY = AbstractCard.CardRarity.RARE;
+    private static final AbstractCard.CardRarity RARITY = CardRarity.SPECIAL;
     private static final AbstractCard.CardTarget TARGET = AbstractCard.CardTarget.SELF;
     private static final AbstractCard.CardType TYPE = AbstractCard.CardType.SKILL;
-    private static final int COST = 2;
+    private static final int COST = 1;
 
     public static ArrayList<String> used = new ArrayList<>();
 
@@ -62,7 +62,7 @@ public class AdministrativeActions extends AbstractThortonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(1);
+            upgradeBaseCost(0);
         }
     }
 }

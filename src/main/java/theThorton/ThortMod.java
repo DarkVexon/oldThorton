@@ -4,6 +4,7 @@ import basemod.BaseMod;
 import basemod.ModPanel;
 import basemod.ReflectionHacks;
 import basemod.abstracts.CustomSavable;
+import basemod.devcommands.power.Power;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
@@ -239,6 +240,7 @@ public class ThortMod implements
         BaseMod.addRelic(new BottledFunds(), RelicType.SHARED);
         BaseMod.addRelic(new GreedFountain(), RelicType.SHARED);
         BaseMod.addRelic(new BrokenCalculator(), RelicType.SHARED);
+        BaseMod.addRelic(new JellyG(), RelicType.SHARED);
 
         BaseMod.addRelicToCustomPool(new CouragePotion(), TheThorton.Enums.COLOR_GRAY);
         BaseMod.addRelicToCustomPool(new BusinessCardPrinter(), TheThorton.Enums.COLOR_GRAY);
@@ -308,7 +310,6 @@ public class ThortMod implements
         BaseMod.addCard(new ROI());
         BaseMod.addCard(new RunningKick());
         BaseMod.addCard(new ScalingIsWin());
-        BaseMod.addCard(new SeeingDouble());
         BaseMod.addCard(new ShoutAndRun());
         BaseMod.addCard(new SicklyRun());
         BaseMod.addCard(new Siphon());
@@ -330,11 +331,13 @@ public class ThortMod implements
         BaseMod.addCard(new GoldenPetal());
         BaseMod.addCard(new Nibble());
         BaseMod.addCard(new SheetShred());
-        BaseMod.addCard(new GemGun());
         BaseMod.addCard(new Cuckoo());
         BaseMod.addCard(new Ghost());
         BaseMod.addCard(new StruckByATrain());
         BaseMod.addCard(new OhNo());
+        BaseMod.addCard(new Purgatory());
+        BaseMod.addCard(new GKsNightmare());
+        BaseMod.addCard(new PowerCreep());
     }
 
     @Override
@@ -400,6 +403,7 @@ public class ThortMod implements
         fleeMax = 3;
         nextQuestionShop = false;
         bonusBig = false;
+        AdministrativeActions.used.clear();
         if ((AbstractDungeon.actNum == 3 && AbstractDungeon.player.currentHealth > 0 && AbstractDungeon.player instanceof TheThorton) || AbstractDungeon.actNum == 4) {
             goldamt++;
         }

@@ -1,7 +1,7 @@
 {
   "thethorton:AdministrativeActions": {
     "NAME": "Administrative Actions",
-    "DESCRIPTION": "Type the name of a card and put it on top of your draw pile. NL You can't type the same name twice. Exhaust."
+    "DESCRIPTION": "Type the name of a card and put it on top of your draw pile. NL You can only type a card once per run. NL Exhaust."
   },
   "thethorton:AngerMoment": {
     "NAME": "Anger Moment",
@@ -183,7 +183,7 @@
   },
   "thethorton:HedgeFund": {
     "NAME": "Hedge Fund",
-    "DESCRIPTION": "Deal !D! damage. NL Next turn, draw 1 less card."
+    "DESCRIPTION": "Deal !D! damage. NL Next turn, draw 1 less card... unless you're the Powdered Toast Man."
   },
   "thethorton:Hexaghostify": {
     "NAME": "Hexaghostify",
@@ -425,5 +425,18 @@
   "thethorton:StruckByATrain": {
     "NAME": "Struck by a Train",
     "DESCRIPTION": "Deal !D! damage. NL Increase this card's damage by !M! this combat."
+  },
+  "thethorton:PowerCreep": {
+    "NAME": "Power Creep",
+    "DESCRIPTION": "Add a random Attack of any color into your hand. NL Double its damage. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add a random Attack of any color into your hand. NL Triple its damage. NL Exhaust."
+  },
+  "thethorton:Purgatory": {
+    "NAME": "Purgatory",
+    "DESCRIPTION": "Reduce the cost of ALL cards not in your hand to 0 until played. NL Exhaust."
+  },
+  "thethorton:GKsNightmare": {
+    "NAME": "GK's Nightmare",
+    "DESCRIPTION": "Add X *Iron *Waves into your hand. NL They cost 0. NL Startup: Lose !M! HP."
   }
 }

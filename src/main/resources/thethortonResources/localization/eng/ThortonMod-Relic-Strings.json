@@ -34,7 +34,7 @@
     "NAME": "Lucky Clover",
     "FLAVOR": "Why ever stop?",
     "DESCRIPTIONS": [
-      "#b66% chance to gain [E] at the start of your turn."
+      "#b67% chance to gain [E] at the start of your turn."
     ]
   },
   "thethorton:GreedFountain": {
@@ -71,6 +71,13 @@
     "DESCRIPTIONS": [
       "Replaces ",
       ".[] NL Start each Elite combat with #b3 #yStrength, #b3 #yDexterity and #b3 #yFocus."
+    ]
+  },
+  "thethorton:JellyG": {
+    "NAME": "Jelly G.",
+    "FLAVOR": "how did i get here",
+    "DESCRIPTIONS": [
+      "Upon pickup, obtain a copy of #yAdministrative #yActions."
     ]
   }
 }

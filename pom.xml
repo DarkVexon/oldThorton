@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>thorton</groupId>
     <artifactId>thorton</artifactId>
-    <version>4756.7.5.9</version>
+    <version>5000.0</version>
     <name>thorton</name>
 
     <properties>

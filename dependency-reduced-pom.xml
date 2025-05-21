@@ -4,7 +4,7 @@
   <groupId>thorton</groupId>
   <artifactId>thorton</artifactId>
   <name>thorton</name>
-  <version>4756.7.5.9</version>
+  <version>5000.0</version>
   <description>A very regular man.</description>
   <build>
     <resources>
